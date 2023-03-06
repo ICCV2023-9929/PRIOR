@@ -1,0 +1,6 @@
+_target_: prior.data.pretrain.mimiccxr.MimicCxrDataset
+dataset_path: <dataset_json_path>
+image_transform: ???
+text_transform: ???
+num_colors: 1
+rate: 1.0

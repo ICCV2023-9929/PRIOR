@@ -1,0 +1,25 @@
+_target_: prior.models.prior.Prior
+text_encoder: ???
+image_encoder: ???
+gpus: ${trainer.gpus}
+max_epochs: 100
+warmup_epochs: 10
+batch_size: 32
+optim: adam
+scheduler: cosine_decay
+learning_rate: 1e-5
+learning_rate_start: 1e-6
+learning_rate_end: 1e-5
+weight_decay: 1e-6
+temperature: 0.01
+local_temperature: 0.01
+embed_dim: 768
+exclude_bn_bias: False
+num_workers: ${num_workers}
+frozen_text_encoder: false
+ckpt_path: 'checkpoints/'
+
+  
+
+
+
